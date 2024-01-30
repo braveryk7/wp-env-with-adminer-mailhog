@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "wp-env": "wp-env",
+    "env-start": "wp-env start",
+    "env-stop": "docker compose down && wp-env stop",
+    "env-restart": "docker compose down && wp-env start --update",
+    "env-rm": "docker compose down && wp-env destroy"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^9.2.0"
+  }
+}
